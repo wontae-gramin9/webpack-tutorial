@@ -30,3 +30,7 @@
 - 번들링하면 아웃풋을 받게될것
   - js, css를 하나만 빌드해도 되고, 여러개 나눠서 빌드해도 된다.
   - 빌드가 끝나면, index.html에서 웹팩 아웃풋만 import하게 된다.
+
+### Code spliting
+
+파일마다 import되는 dependency가 있을 때, 중복으로 import되지 않도록 하나의 split된 파일로 빼서 Common dependency로 사용하는 법
