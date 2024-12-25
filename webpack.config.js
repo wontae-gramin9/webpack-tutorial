@@ -54,7 +54,10 @@ module.exports = {
       ],
     }),
     new BundleAnalyzerPlugin({
-      
-    })
+      // Creates interactive treemap visualization of the contents of all your bundles
+      // localhost:8888
+      // 현재는 lodash가 가장 크고 자잘한 번들이 있지만, 중요한건 크기가 아니라
+      // index.bunlde.js과 courses.bundle.js에 중복으로 번들링되는 모듈이 있다는 것
+    }),
   ],
 };
